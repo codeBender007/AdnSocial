@@ -10,7 +10,7 @@ export default function useLogout() {
 
     const logout = async () => {
         try {
-            const res = await fetch("/api/users/logout", {
+            const res = await fetch("https://mohdadnan.onrender.com/api/users/logout", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
