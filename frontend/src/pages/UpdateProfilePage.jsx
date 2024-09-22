@@ -42,7 +42,7 @@ export default function UpdateProfilePage() {
         setUpdating(true);
         try{
 
-            const res = await fetch(`/api/users/update/${user._id}`,{
+            const res = await fetch(`https://mohdadnan.onrender.com/api/users/update/${user._id}`,{
                 method:"PUT",
                 headers:{
                     "Content-Type":"application/json",
