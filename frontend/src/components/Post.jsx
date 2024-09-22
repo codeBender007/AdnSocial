@@ -20,7 +20,7 @@ export default function Post({ post, postedBy  }) {
     useEffect(() => {
         const getUser = async () => {
             try {
-                const res = await fetch(`/api/users/profile/` + postedBy)
+                const res = await fetch(`https://mohdadnan.onrender.com/api/users/profile/` + postedBy)
                 const data = await res.json();
                 if (data.error) {
                     showToast("Error", data.error, "error");
