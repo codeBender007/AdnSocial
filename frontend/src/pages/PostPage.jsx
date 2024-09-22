@@ -25,7 +25,7 @@ export default function PostPage() {
     const getPost = async () =>{
       setPosts([])
       try{
-        const res = await fetch(`/api/posts/${pid}`);
+        const res = await fetch(`https://mohdadnan.onrender.com/api/posts/${pid}`);
         const data = await res.json();
         if(data.error){
           showToast("Error" , data.error , "error");
