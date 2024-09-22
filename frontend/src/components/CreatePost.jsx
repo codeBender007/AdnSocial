@@ -41,7 +41,7 @@ export default function CreatePost() {
     const handleCreatePost = async () =>{
         setLoading(true);
         try{
-            const res = await fetch(`/api/posts/create`, {
+            const res = await fetch(`https://mohdadnan.onrender.com/api/posts/create`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
