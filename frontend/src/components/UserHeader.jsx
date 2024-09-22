@@ -57,7 +57,7 @@ export default function UserHeader({user}) {
 
         setUpdating(true);
         try{
-            const res = await fetch(`/api/users/follow/${user._id}`,{
+            const res = await fetch(`https://mohdadnan.onrender.com/api/users/follow/${user._id}`,{
                 method:"POST",
                 headers:{
                     "Content_Type":"application/json",
