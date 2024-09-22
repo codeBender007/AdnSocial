@@ -17,7 +17,7 @@ export default function MessageInput({setMessages}) {
     if(!messageText) return;
 
     try {
-      const res = await fetch("/api/messages",{
+      const res = await fetch("https://mohdadnan.onrender.com/api/messages",{
         method:"POST",
         headers:{
           "Content-Type":"application/json",
