@@ -25,7 +25,7 @@ export default function ChatPage() {
     useEffect( ()=> {
         const getConversations = async () =>{
             try {
-                const res = await fetch("/api/messages/conversations");
+                const res = await fetch("https://mohdadnan.onrender.com/api/messages/conversations");
                 const data = await res.json();
                 if (data.error) {
                     showToast("Error", data.error, "error")
