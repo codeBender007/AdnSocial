@@ -12,9 +12,9 @@
   "build":{
     "type":"react-app",
     "env":{
-      "NODE_ENV":"production"
+      "NODE_ENV":"production",
     },
-    "buildType":"production"
+    "buildType":"production",
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.1.1",
