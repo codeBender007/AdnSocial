@@ -7,7 +7,7 @@ const app = express();
 const { app, server } = require('./socket/socket')
 app.use(express.json({limit:"50mb"}));
 app.use(express.urlencoded({extended:true}));
-// app.use(cookieParser());
+app.use(cookieParser());
 connectDB();
 const cloudinary = require('cloudinary').v2
 
